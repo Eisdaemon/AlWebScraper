@@ -12,7 +12,6 @@ soup = bs4.BeautifulSoup(res.text, 'html.parser')
 #Gets all Bookmark
 for a in soup.find_all('a', href= True, rel = 'bookmark'):
     Fahrten.append(a['href'])
-#print(Fahrten)
 
 for numBook in range(len(Fahrten)):
     #New Link
