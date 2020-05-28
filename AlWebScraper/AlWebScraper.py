@@ -1,4 +1,4 @@
-import requests, os, bs4, re
+import requests, os, bs4
 from pathlib import Path
 url = 'https://stammalexanderlion.de/fahrten-fotos/'
 #Creates Folder
