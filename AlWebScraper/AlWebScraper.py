@@ -5,7 +5,7 @@ url = 'https://stammalexanderlion.de/fahrten-fotos/'
 p = Path('E:/Bilder/AL')
 os.makedirs (p, exist_ok = True)
 Fahrten = []
-#Gets websites, bypasse DDos protextion
+#Gets websites, bypasse DDos protection, I think.
 res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
 res.raise_for_status
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
